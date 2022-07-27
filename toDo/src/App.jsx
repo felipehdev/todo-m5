@@ -2,8 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
+const [requisicao, setRequisicao] = useState()
+
 function App() {
-  const [count, setCount] = useState(0)
+  async function req(){
+   const response = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+   const json = await response.json()
+   setRequisicao(json)
+  }
 
   return (
     <div className="App">
