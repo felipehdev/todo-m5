@@ -3,7 +3,9 @@
     height: 70px;
     border-color: coral;
 }
+
 .title {
     font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 }
